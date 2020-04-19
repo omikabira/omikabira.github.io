@@ -16,7 +16,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: #f9f9f9;
+  background-color: #d4d4d4;
   overflow-x: hidden;
   overflow-y: auto;
   background-image: url(../images/main_bg.png);
@@ -633,7 +633,7 @@ body > footer .copyrights {
   padding: 8px 0;
   margin: 0 20px;
   text-align: center;
-  color: #49515d;
+  color: #000;
   font-size: 15px;
   line-height: 1;
   font-weight: 400;
@@ -769,7 +769,7 @@ body > footer .copyrights {
 }
 
 .custom-page-content .page-header.color-1 {
-  background-color: #303030;
+  background-color: #000;
   background-image: url(../images/sp_main_bg.png);
   background-size: cover;
   -webkit-background-size: cover;
@@ -799,7 +799,7 @@ body > footer .copyrights {
 ======================================= */
 .start-page-content .page-header {
   position: relative;
-  background-color: #ddd;
+  background-color: #000;
   padding: 50px;
   margin-bottom: 25px;
   background-image: url(../images/sp_main_bg.png);
@@ -815,6 +815,27 @@ body > footer .copyrights {
   margin-bottom: -75px;
   border: 3px solid #fff;
   background-color: #fff;
+  -webkit-transform: translateY(-9px);
+  -ms-transform: translateY(-9px);
+  -o-transform: translateY(-9px);
+  transform: translateY(-9px);
+  -webkit-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.start-page-content .page-header .photo:hover {
+  -webkit-transform: translateY(9px);
+  -ms-transform: translateY(9px);
+  -o-transform: translateY(9px);
+  transform: translateY(9px);
   -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
   box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
@@ -825,30 +846,19 @@ body > footer .copyrights {
   transition: all 0.3s ease-in-out;
 }
 
-.start-page-content .page-header .photo:hover {
-  -webkit-transform: translateY(-9px);
-  -ms-transform: translateY(-9px);
-  -o-transform: translateY(-9px);
-  transform: translateY(-9px);
-  -webkit-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
-  -o-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
-}
-
 .start-page-content .page-header .title-block {
   text-align: center;
 }
 
 .start-page-content .page-header .title-block h1 {
-  color: #303030;
+  color: #fff;
   font-size: 54px;
   font-weight: 700;
   margin: 30px 0 0;
 }
 
 .start-page-content .page-header .title-block .sp-subtitle {
-  color: #303030;
+  color: #fff;
   font-size: 18px;
   margin: 0;
 }
@@ -872,11 +882,11 @@ body > footer .copyrights {
 .start-page-content .contact--social li a {
   display: block;
   width: 35px;
-  background-color: #fff;
+  background-color: #303030;
   margin: 18px 0;
   padding: 6px 0;
-  color: #303030;
-  border: 1px solid #303030;
+  color: #fff;
+  border: 1px solid #fff;
   font-size: 14px;
   text-align: center;
   -webkit-transition: color .25s ease,background-color .25s ease-in-out,border-color .25s ease;
@@ -884,9 +894,9 @@ body > footer .copyrights {
 }
 
 .start-page-content .contact--social li a:focus,.start-page-content .contact--social li a:hover {
-  color: #fff;
-  border: 1px solid #303030;
-  background: #303030
+  color: #303030;
+  border: 1px solid #fff;
+  background: #fff
 }
 
 
@@ -954,7 +964,7 @@ body > footer .copyrights {
 }
 
 .timeline-item:hover {
-  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+  box-shadow:0px 0px 8px 0px rgba(0,0,0,0.2);
 }
 
 .timeline-item:last-child {
@@ -993,6 +1003,7 @@ body > footer .copyrights {
   margin: 0;
   font-size: 16px;
   line-height: 1.2em;
+  font-weight: bold;
 }
 
 .timeline-item .item-period {
@@ -1022,10 +1033,12 @@ body > footer .copyrights {
 }
 
 .skills-info h4 { 
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1.1em;
-  position: relative; 
+  position: relative;
   margin: 0 0 5px;
+  color: #000;
+  font-weight: normal;
 }
 
 .skill-container {
@@ -1035,7 +1048,7 @@ body > footer .copyrights {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -1996,6 +2009,9 @@ body > footer .copyrights {
   position: relative;
   width: 100%;
   margin-bottom: 20px;
+  box-shadow: 0 2px 1px #ddd;
+  border-style: solid;
+  border-width: 1px 1px 1px;
 }
 
 .project-general-info {
